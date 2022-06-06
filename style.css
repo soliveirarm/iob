@@ -163,6 +163,7 @@ p {
 
 footer .page-subtitle {
 	border-bottom: none;
+	border-top: 2px solid var(--rosa);
 }
 
 /* rodapé */
@@ -250,7 +251,7 @@ footer .page-subtitle {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--azul-claro);
-  border: 0.15em solid #fff;
+  border: 0.15em solid var(--rosa-claro);
   border-radius: 100vw;
 }
 
