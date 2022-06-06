@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&family=Montserrat+Alternates:wght@300;400&display=swap');
+
+:root {
+	--rosa: #ffc4ff;
+	--rosa-claro:#e4dbf1;
+	--azul-claro: #50b4f8;
+	--bg: rgb(14,13,44);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+	font-family: 'Kumbh Sans', sans-serif;
+	scroll-behavior: smooth;
+	background: var(--bg);
+	color: var(--rosa-claro);
+}
+
+/* cabeçalho */
+header {
+	width: 100%;
+	overflow: hidden;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: "nav"
+	"h1"
+	"sc";
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url(https://pbs.twimg.com/media/FQsYNgaXMAAqa5O?format=jpg&name=4096x4096);
+  background-attachment: fixed;
+  background-size: cover;
+	border-bottom: 2px solid var(--rosa);
+}
+
+header .scroll {
+	text-decoration: none;
+	color: #ffffff;
+	grid-area: sc;
+	justify-self: center;
+	align-self: end;
+	padding: 1rem;
+}
+
+
+/* navegação */
+nav {
+	grid-area: nav;
+	justify-self: end;
+	align-self: start;
+	padding: 1rem;
+}
+
+nav ul li {
+	display: inline;
+	background-color: var(--azul);
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: .03em;
+}
+
+nav ul li a:hover {
+	color: var(--rosa);
+}
+
+/* tópicos */
+.list {
+	padding-left: 2.3rem;
+	font-size: 1.2rem;
+  list-style-type: disc;
+}
+
+/* ícones fontawesome */
+.fa-solid {
+	color: var(--rosa);
+}
+
+.fa-chevron-down {
+	font-size: 1.4rem;
+}
+
+.scroll:hover {
+  color: var(--azul-claro);
+}
+
+/* containers */
+.container {
+	padding: 0.7em;
+	overflow: hidden;
+	margin: 1rem auto;
+	max-width: 1000px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: .8rem;
+	justify-content: center;
+}
+
+/* imagens */
+.imagens {
+	width: 400px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+	margin-bottom: 0.6rem;
+}
+
+
+/* texto */
+.page-title {
+	grid-area: h1;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 4rem;
+	text-align: center;
+	font-weight: 300;
+	text-shadow: 2px 5px 10px var(--bg);
+}
+
+.page-subtitle {
+	font-size: 2rem;
+	color: var(--rosa);
+	background-color: var(--azul-claro);
+	padding: 2rem;
+	border-radius: 5px;
+	text-shadow: 2px 5px 5px rgba(0,0,0,0.4);
+	letter-spacing: .1rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+/* 	border-bottom: 2px solid var(--rosa); */
+}
+
+p {
+	margin-top: .5rem;
+	font-size: 1.2rem;
+	padding-right: 0.8rem;
+	padding-left: 0.8rem;
+}
+
+.big-text {
+	font-size: 1.4rem;
+	padding: 0.8rem 0.8rem 0 0.8rem;
+}
+
+.pink {
+	color: var(--rosa);
+}
+
+.nome {
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+/* .quote {
+	background-color: var(--rosa);
+	color: var(--azul-claro);
+	padding: 2rem;
+	border-radius: 5px;
+	letter-spacing: .1rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+	font-style: italic;
+} */
+
+/* Rodapé */
+footer {
+	background-color: var(--azul-claro);
+	overflow: hidden;
+}
+
+footer .page-subtitle {
+	text-align: center;
+}
+
+.integrantes {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	padding-bottom: 1.4rem;
+}
+
+.integrante {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile {
+	width: 60px;
+	border-radius: 50%;
+	box-shadow: 2px 5px 15px rgba(0,0,0,0.4);
+	margin: 0.6rem;	
+}
+
+/* Responsividade */
+@media screen and (max-width: 740px) {
+	.integrantes {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	padding-bottom: 1.4rem;
+	}
+
+	.grid-container {
+		grid-template-columns: 1fr;
+	}
+	.imagens {
+		justify-self: center;
+	}
+}	
+
+@media screen and (max-width: 460px) {
+	.integrantes {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	padding-bottom: 1.4rem;
+}
+
+	header {
+		height: 98vh;
+	}
+
+	.imagens {
+		width: 350px;
+	}
+
+	nav {
+		display: none;
+	}
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--azul-claro);
+  border: 0.15em solid #fff;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(204, 92%, 50%);
+}
