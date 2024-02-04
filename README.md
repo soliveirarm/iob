@@ -1,7 +1,7 @@
 # Internet of Behavior (IoB)
 
 - Trabalho em grupo da faculdade sobre Internet of Behavior
-- **Matéria**: Padrões deprojeto de Sítios Internet I
+- **Matéria**: Padrões de Projeto de Sítios Internet I
 - **Semestre**: 1º
 
 ## Integrantes:
