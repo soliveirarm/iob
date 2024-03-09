@@ -1,7 +1,7 @@
 # Internet of Behavior (IoB)
 
-- Trabalho em grupo da faculdade sobre Internet of Behavior
-- **Matéria**: Padrões de Projeto de Sítios Internet I
+- Trabalho multidisciplinar em grupo da faculdade sobre Internet of Behavior
+- **Matérias**: Padrões de Projeto de Sítios Internet I e Bases da Internet
 - **Semestre**: 1º
 
 ## Integrantes:
@@ -9,4 +9,4 @@
 - Helena Matos
 - [João V. Santos](https://github.com/joao2012)
 - Letícia Amanda
-- [Sarah Rebeca](https://github.com/oliveirasarah)
+- [Sarah Oliveira](https://github.com/soliveirarm)
