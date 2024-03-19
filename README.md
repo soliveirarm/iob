@@ -4,6 +4,8 @@
 - **Matérias**: Padrões de Projeto de Sítios Internet I e Bases da Internet
 - **Semestre**: 1º
 
+![website-pic](./img/website-pic.png)
+
 ## Integrantes:
 
 - Helena Matos
